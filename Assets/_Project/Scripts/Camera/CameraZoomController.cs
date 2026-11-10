@@ -18,13 +18,14 @@ public class CameraZoomController : MonoBehaviour
     [SerializeField] private float zoomSmoothing = 8f;
 
     private CinemachineOrbitalFollow _orbital;
+
     private float _targetDistance;
 
     private void Awake()
     {
         _orbital = GetComponent<CinemachineOrbitalFollow>();
-
         // Start from whatever radius was configured in the Inspector
+
         _targetDistance = _orbital.RadialAxis.Value;
     }
     private void Update()
