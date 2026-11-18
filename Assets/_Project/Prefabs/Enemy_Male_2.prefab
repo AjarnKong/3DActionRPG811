@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: detectionRange
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9050603567814690080, guid: 02337ce71dbc12441a6ed0ff2d0ac0b1, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 93911bb7a176abe42bfbf9f66586e7aa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
