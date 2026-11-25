@@ -10,10 +10,23 @@ public class LootDropper : MonoBehaviour
     [SerializeField] private ItemPickup fallbackPickupPrefab;
     [SerializeField] private float spawnHeight = 0.5f;
     [SerializeField] private float scatterRadius = 0.6f;
+    [SerializeField] private CurrencyManager playerCurrency;
+
     private Health _health;
     private void Awake()
     {
         _health = GetComponent<Health>();
+
+        // A prefab asset cannot store a reference to a scene object,
+        // so the player is located at runtime instead
+        if (playerCurrency == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerCurrency = player.GetComponent<CurrencyManager>();
+            }
+        }
     }
     private void OnEnable()
     {
@@ -25,6 +38,12 @@ public class LootDropper : MonoBehaviour
     }
     private void DropLoot()
     {
+        if (playerCurrency != null)
+        {
+            int gold = Random.Range(lootTable.minGold, lootTable.maxGold + 1);
+            playerCurrency.Add(gold);
+        }
+
         if (lootTable == null)
         {
             return;

@@ -18,6 +18,11 @@ public class LootTable : ScriptableObject
     public Entry[] entries;
     // Chance that anything drops at all
     [Range(0f, 1f)] public float dropChance = 0.7f;
+
+    [Header("Gold")]
+    [Min(0)] public int minGold = 5;
+    [Min(0)] public int maxGold = 15;
+
     public Entry Roll()
     {
         if (entries == null || entries.Length == 0)

@@ -494,6 +494,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1815549017066747638}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6579361629082096577}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 498130213657907636}
   m_SourcePrefab: {fileID: 100100000, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
 --- !u!1 &1240749805642176025 stripped
 GameObject:
@@ -721,7 +727,7 @@ MonoBehaviour:
   hitRadius: 0.6
   targetLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!114 &4402921451398127391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +790,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentManager
   weaponSocket: {fileID: 6413564526621687241}
   baseAttackPower: 5
+--- !u!114 &6579361629082096577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240749805642176025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2941bd0f4e42a44a138ceb7445d6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CurrencyManager
+  startingGold: 50
+--- !u!114 &498130213657907636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240749805642176025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5d54d8f42b00241b5adb79106b8937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransactionService
+  inventory: {fileID: -1962608063483585797}
+  currency: {fileID: 6579361629082096577}
 --- !u!4 &1906104507173932195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}

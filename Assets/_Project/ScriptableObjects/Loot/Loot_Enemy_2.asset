@@ -26,3 +26,5 @@ MonoBehaviour:
     maxAmount: 2
     weight: 10
   dropChance: 0.7
+  minGold: 20
+  maxGold: 40

@@ -17,7 +17,7 @@ MonoBehaviour:
   description: 'Gemstone
 
 '
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e7d29a79bc7fae248887c8a08a160303, type: 3}
   itemType: 2
   maxStackSize: 10
   buyPrice: 10

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4651661414656663359}
   - component: {fileID: 6025438385320685533}
   - component: {fileID: 4440292327027138419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,9 +123,9 @@ GameObject:
   - component: {fileID: 181855659843232960}
   - component: {fileID: 4587088839113188282}
   - component: {fileID: 6526307862287080026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pickup_Base
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

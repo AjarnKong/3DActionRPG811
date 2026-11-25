@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8537af3061272914ba8b90bd2d23c09b, type: 3}
+  m_Name: Shop_Village
+  m_EditorClassIdentifier: Assembly-CSharp::ShopInventory
+  shopName: General Store
+  entries:
+  - item: {fileID: 11400000, guid: dfa283bb534d1ba41bccf3ac42db4a42, type: 2}
+    priceOverride: 0
+  - item: {fileID: 11400000, guid: 8f69ada4576033c4bbc0ab6f7d0640ac, type: 2}
+    priceOverride: 0
+  - item: {fileID: 11400000, guid: 65bbc082aae47854ba50026872cc4eb4, type: 2}
+    priceOverride: 0
+  - item: {fileID: 11400000, guid: 91fd420fcda3d93479eabb2d9f8d1c64, type: 2}
+    priceOverride: 0
+  - item: {fileID: 11400000, guid: ccd5892e52543364089d002d06b53633, type: 2}
+    priceOverride: 0
+  - item: {fileID: 11400000, guid: a557e5d0fd9de8e41999fff2087405fd, type: 2}
+    priceOverride: 0
